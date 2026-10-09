@@ -1,0 +1,128 @@
+import type { Category } from '@/types';
+
+export const categories: Category[] = [
+  {
+    id: '1',
+    name: 'ADAS Calibration',
+    slug: 'adas-calibration',
+    description: 'Advanced driver assistance system calibration tools for modern vehicles.',
+    image: 'https://images.pexels.com/photos/16303691/pexels-photo-16303691.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    icon: 'Crosshair',
+    productType: 'garage-equipment',
+  },
+  {
+    id: '2',
+    name: 'Detection Tool',
+    slug: 'detection-tool',
+    description: 'Professional diagnostic scanners and detection equipment for all systems.',
+    image: 'https://images.pexels.com/photos/12271951/pexels-photo-12271951.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    icon: 'ScanSearch',
+    productType: 'garage-equipment',
+  },
+  {
+    id: '3',
+    name: 'Wheel Equipment',
+    slug: 'wheel-equipment',
+    description: 'Alignment, balancing, and tire changing machines for wheel service.',
+    image: 'https://images.pexels.com/photos/38324578/pexels-photo-38324578.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    icon: 'CircleDot',
+    productType: 'garage-equipment',
+  },
+  {
+    id: '4',
+    name: 'Maintenance Equipment',
+    slug: 'maintenance-equipment',
+    description: 'Fluid service, cleaning, and maintenance tools for complete vehicle care.',
+    image: 'https://images.pexels.com/photos/4116172/pexels-photo-4116172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    icon: 'Wrench',
+    productType: 'garage-equipment',
+  },
+  {
+    id: '5',
+    name: 'Lifting Equipment',
+    slug: 'lifting-equipment',
+    description: 'Scissor lifts, two-post lifts, and hoists for safe vehicle elevation.',
+    image: 'https://images.pexels.com/photos/8985514/pexels-photo-8985514.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    icon: 'ArrowUpFromLine',
+    productType: 'garage-equipment',
+  },
+];
+
+export const garageCategories = categories;
+
+export const evCategories: Category[] = [
+  {
+    id: 'ev-1',
+    name: '2-Wheeler Electric Bikes',
+    slug: '2-wheeler',
+    description: 'Electric bikes and electric motorcycles designed for efficient urban transportation.',
+    image: 'https://images.pexels.com/photos/2519374/pexels-photo-2519374.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    icon: 'Bike',
+    productType: 'electric-vehicle',
+  },
+  {
+    id: 'ev-2',
+    name: '3-Wheeler Electric Vehicles',
+    slug: '3-wheeler',
+    description: 'Passenger and commercial three-wheel EV solutions for urban transportation and logistics.',
+    image: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    icon: 'Truck',
+    productType: 'electric-vehicle',
+  },
+  {
+    id: 'ev-3',
+    name: 'EV Batteries',
+    slug: 'ev-battery',
+    description: 'Advanced lithium battery systems and replacement packs engineered for reliability.',
+    image: 'https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    icon: 'BatteryCharging',
+    productType: 'electric-vehicle',
+  },
+  {
+    id: 'ev-4',
+    name: 'EV Motors',
+    slug: 'ev-motor',
+    description: 'High-torque electric traction motors and efficient powertrain drive systems.',
+    image: 'https://images.pexels.com/photos/3862601/pexels-photo-3862601.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    icon: 'Zap',
+    productType: 'electric-vehicle',
+  },
+  {
+    id: 'ev-5',
+    name: 'EV Controllers',
+    slug: 'ev-controller',
+    description: 'Intelligent sine-wave motor controllers and electronic management units.',
+    image: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    icon: 'Cpu',
+    productType: 'electric-vehicle',
+  },
+  {
+    id: 'ev-6',
+    name: 'EV Chargers',
+    slug: 'ev-charger',
+    description: 'Smart fast-charging stations and portable on-board charging accessories.',
+    image: 'https://images.pexels.com/photos/9800006/pexels-photo-9800006.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    icon: 'PlugZap',
+    productType: 'electric-vehicle',
+  },
+  {
+    id: 'ev-7',
+    name: 'EV Spare Parts',
+    slug: 'ev-spare-parts',
+    description: 'OEM replacement components, brake sets, throttles, and wiring harnesses.',
+    image: 'https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    icon: 'Cog',
+    productType: 'electric-vehicle',
+  },
+  {
+    id: 'ev-8',
+    name: 'EV Accessories',
+    slug: 'ev-accessories',
+    description: 'Supporting accessories, digital dashboards, conversion equipment, and safety gear.',
+    image: 'https://images.pexels.com/photos/3807277/pexels-photo-3807277.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    icon: 'Layers',
+    productType: 'electric-vehicle',
+  },
+];
+
+export const allCategories: Category[] = [...categories, ...evCategories];

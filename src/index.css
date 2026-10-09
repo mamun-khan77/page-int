@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 400;
+    color: #334155;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #102a43;
+    line-height: 1.2;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #dc2626;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background-color: #dc2626;
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1280px] px-5 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply bg-accent-600 px-6 py-3 text-sm text-white shadow-sm hover:bg-accent-700 active:bg-accent-800;
+  }
+
+  .btn-secondary {
+    @apply bg-navy-800 px-6 py-3 text-sm text-white shadow-sm hover:bg-navy-900 active:bg-navy-950;
+  }
+
+  .btn-outline {
+    @apply border border-steel-300 bg-white px-6 py-3 text-sm text-navy-800 hover:border-navy-800 hover:bg-navy-50 active:bg-navy-100;
+  }
+
+  .btn-ghost {
+    @apply px-4 py-2 text-sm text-navy-700 hover:bg-navy-50 hover:text-navy-900;
+  }
+
+  .btn-lg {
+    @apply px-8 py-4 text-base;
+  }
+
+  .card {
+    @apply rounded-xl border border-steel-200 bg-white shadow-card transition-all duration-300;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold;
+  }
+
+  .badge-available {
+    @apply bg-green-50 text-green-700 ring-1 ring-inset ring-green-200;
+  }
+
+  .badge-out-of-stock {
+    @apply bg-amber-50 text-amber-700 ring-1 ring-inset ring-amber-200;
+  }
+
+  .section-eyebrow {
+    @apply text-xs font-bold uppercase tracking-widest text-accent-600;
+  }
+
+  .input-field {
+    @apply w-full rounded-lg border border-steel-300 bg-white px-4 py-3 text-sm text-navy-900 placeholder:text-steel-400 transition-colors focus:border-accent-500 focus:outline-none focus:ring-2 focus:ring-accent-500/20;
+  }
+
+  .label-field {
+    @apply mb-1.5 block text-sm font-semibold text-navy-800;
+  }
+}
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
